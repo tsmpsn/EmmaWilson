@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<title>Gallery</title>
+
+<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="/include.js" type="text" charset="utf-8" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/gallery.js"></script>
+<script type="text/javascript" src="js/include.js"></script>
+</head>
+
+<body>
+	<div id="main">
+		<div w3-include-html="partials/_navigationbar.html" id="header"></div>
+		<div w3-include-html="partials/_socialicons.html"></div>
+		
+		<div class="container">			
+			<div id="col1" class="galCol">
+				<div class="galleryimg">
+					<img src="img/GALLERY 1.jpg" id="img1" onclick="showFullImage(this.id);" />
+				</div>
+				<div class="galleryimg">
+					<img src="img/GALLERY 2.jpg" id="img2" onclick="showFullImage(this.id);" />
+				</div>
+				<div class="galleryimg">
+					<img src="img/GALLERY 3.jpg" id="img3" onclick="showFullImage(this.id);" />
+				</div>
+				<div class="galleryimg">
+					<img src="img/GALLERY 4.jpg" id="img4" onclick="showFullImage(this.id);" />
+				</div>
+				<div class="galleryimg">
+					<img src="img/GALLERY 5.jpg" id="img5" onclick="showFullImage(this.id);" />
+				</div>
+				<div class="galleryimg">
+					<img src="img/GALLERY 6.jpg" id="img6" onclick="showFullImage(this.id);" />
+				</div>
+			</div>
+			<div id="col2" class="galCol">
+				<div class="galleryimg">
+					<img src="img/GALLERY 7.jpeg" id="img7" onclick="showFullImage(this.id);" />
+				</div>
+				<div class="galleryimg">
+					<img src="img/GALLERY 8.jpg" id="img8" onclick="showFullImage(this.id);" />
+				</div>
+				<div class="galleryimg">
+					<img src="img/GALLERY 9.jpg" id="img9" onclick="showFullImage(this.id);" />
+				</div>
+				<div class="galleryimg">
+					<img src="img/GALLERY 10.jpg" id="img10" onclick="showFullImage(this.id);" />
+				</div>
+				<div class="galleryimg">
+					<img src="img/GALLERY 11.jpg" id="img11" onclick="showFullImage(this.id);" />
+				</div>
+				<div class="galleryimg">
+					<img src="img/GALLERY 12.jpg" id="img12" onclick="showFullImage(this.id);" />
+				</div>
+			</div>
+			<div id="col3" class="galCol">
+				<div class="galleryimg">
+					<img src="img/GALLERY 13.jpg" id="img13" onclick="showFullImage(this.id);" />
+				</div>
+				<div class="galleryimg">
+					<img src="img/GALLERY 14.jpg" id="img14" onclick="showFullImage(this.id);" />
+				</div>
+				<div class="galleryimg">
+					<img src="img/GALLERY 15.jpg" id="img15" onclick="showFullImage(this.id);" />
+				</div>
+				<div class="galleryimg">
+					<img src="img/GALLERY 16.jpg" id="img16" onclick="showFullImage(this.id);" />
+				</div>
+				<div class="galleryimg">
+					<img src="img/GALLERY 17.jpg" id="img17" onclick="showFullImage(this.id);" />
+				</div>
+				<div class="galleryimg">
+					<img src="img/GALLERY 18.jpg" id="img18" onclick="showFullImage(this.id);" />
+				</div>
+			</div>
+		</div>
+		
+		<!-- View Image -->
+		
+		<div id="imageBacking" class="hideFullImage" >
+			<div class="imgholder">
+				<div id="imgBox">
+					<div id="imgDetails">
+						<img src="img/sideblackwhite.jpg" id="fullGalleryImage" />
+					</div>
+				</div>
+				<div class="imageOptions" >
+					<a onclick="previousImage();" href="#">Previous Image</a>
+				</div>
+				<div id="closeImage" class="imageOptions">
+					<a onclick="hideFullImage();" href="#">Close</a>
+				</div>
+				<div class="imageOptions" >
+					<a onclick="nextImage();" href="#">Next Image</a>
+				</div>
+			</div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+			<br />
+		</div>
+	</div>
+	
+	<script>includeHTML();</script>
+</body>

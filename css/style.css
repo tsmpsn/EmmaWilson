@@ -1,0 +1,437 @@
+/* Variables */
+/* Navigation */
+#header {
+  background-color: #c8a2c8;
+  height: 10%;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  flex-direction: row;
+}
+
+#logos {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoImg {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 20%;
+  width: 60%;
+}
+
+#nav a {
+  border-right-color: #fceebd;
+  border-right-style: inset;
+  border-right-width: 2px;
+  color: #fceebd;
+  display: inline;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: Arial;
+  letter-spacing: 3px;
+  margin: 15px 0px 10px 0px;
+  padding: 0 2%;
+}
+
+#navlogo {
+  float: right;
+  padding: 2%;
+  position: fixed;
+  z-index: 59999;
+}
+
+/* Social Icons */
+#socialicons {
+  /*background-color: $tertiary-color;*/
+  padding: 2%;
+  margin: 3%;
+  float: left;
+  margin-top: 12%;
+  text-align: center;
+  position: fixed;
+  width: 6%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+#socialicon {
+  text-align: center;
+  z-index: 3;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+}
+
+#socialicons a div {
+  color: #331;
+  vertical-align: middle;
+}
+
+.rounded-link {
+  display: inline-block;
+  background-color: rgba(242, 242, 242, 0.7);
+  border-radius: 25%;
+  margin: auto;
+  padding: 4%;
+  width: 70%;
+}
+
+#socialicons img {
+  vertical-align: middle;
+}
+
+#socialicons p {
+  color: #fceebd;
+}
+
+.lastchild {
+  border-right: none 0px !important;
+}
+
+/* Main */
+body {
+  background-color: #f2f2f2;
+  background-repeat: repeat;
+  /*background-color: rgba(252,238,189, 1);*/
+  margin: 0;
+}
+
+div a {
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.container {
+  background-color: #c8a2c8;
+  color: #331;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  max-height: 80%;
+  margin-left: 3%;
+  z-index: 1;
+  position: absolute;
+  overflow: scroll;
+  border-bottom: 8px #c8a2c8 solid;
+  border-top: 8px #c8a2c8 solid;
+  width: 80%;
+  padding: 0 4% 0 10%;
+}
+
+.container a {
+  color: #fceebd;
+}
+
+.container h1 {
+  padding: 0 5%;
+  text-align: center;
+}
+
+.container p {
+  font-size: 95%;
+}
+
+.left {
+  width: 45%;
+  display: inline-block;
+  padding: 2%;
+  vertical-align: top;
+}
+
+.right {
+  width: 45%;
+  display: inline-block;
+  padding: 2%;
+  vertical-align: top;
+}
+
+.text-link {
+  font-family: Alegreya-Bold;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Home */
+#about {
+  float: left;
+  display: inline-block;
+  width: 60%;
+  font-size: 125%;
+  border-right: 4px solid #f2f2f2;
+  padding: 2%;
+}
+
+#about h3 {
+  text-align: center;
+  margin: 1%;
+  color: #fceebd;
+}
+
+#about p {
+  display: inline-block;
+}
+
+#about .imgbox {
+  display: inline-block;
+  margin: auto;
+  width: 30%;
+  height: 35%;
+  text-align: center;
+  padding: 0 9%;
+}
+
+#homeimages {
+  float: right;
+  display: inline-block;
+  width: 33%;
+  height: 33%;
+  background-color: #c8a2c8;
+  color: #331;
+  padding: 1%;
+  border-radius: 3%;
+}
+
+.imgbox img {
+  width: 200px;
+  padding: 5%;
+  margin: auto;
+  display: block;
+}
+
+#theysay {
+  font-family: "Crimson Text", serif;
+}
+
+#theysay p em {
+  font-size: 80%;
+}
+
+/* Guest Vocalist */
+.gvBox {
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+  display: inline-block;
+  padding: 2%;
+  margin: 2%;
+  color: #fceebd;
+  vertical-align: middle;
+}
+
+.gvBox iframe {
+  margin: auto;
+  display: block;
+}
+
+.container .gvURL a {
+  color: #331;
+}
+
+/* Model */
+.portfolioBox {
+  width: 40%;
+  background-color: #f2f2f2;
+  padding: 1%;
+  margin: 1% 3%;
+  display: inline-block;
+  border-radius: 1%;
+  vertical-align: middle;
+  color: #331;
+}
+
+.portfolioBox iframe {
+  width: 100%;
+  margin: 2%;
+}
+
+.portfolioBox img {
+  width: 100%;
+  margin: 2%;
+}
+
+#modelcontent {
+  padding: 1% 5%;
+  display: inline-block;
+}
+
+#modelportfolio {
+  padding: 0 3%;
+}
+
+#portfolioNavigation {
+  margin: 2% 0;
+  background-color: #f2f2f2;
+  border-radius: 2%;
+  padding: 2%;
+  color: #331;
+}
+
+#portfolioNavigation a {
+  color: #331;
+  margin: 3% 1.5%;
+  float: right;
+}
+
+#portfolioNavigation h1 {
+  display: inline-block;
+}
+
+#uglyvideo {
+  padding: 1%;
+  display: block;
+  margin: auto;
+}
+
+/* Gallery */
+.imageOptions {
+  width: 10%;
+  display: inline-block;
+}
+
+.imageOptions a {
+  color: #f2f2f2;
+  width: 100%;
+  margin: auto;
+  padding: 5%;
+  display: inline-block;
+}
+
+.galCol {
+  width: 33%;
+  display: inline-block;
+  margin: auto;
+  vertical-align: top;
+}
+
+.galleryimg {
+  vertical-align: top;
+  align-content: center;
+  display: inline-block;
+}
+
+.galleryimg img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+.hideFullImage {
+  visibility: hidden;
+}
+
+.imgholder {
+  border: 10px solid #fff;
+  width: 70%;
+  height: 70%;
+  text-align: center;
+  margin: 5% auto;
+  vertical-align: middle;
+  background-color: #333;
+}
+
+#imageBacking {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #331;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  margin: 0;
+}
+
+#imgBox {
+  margin: 5% 2% auto auto;
+  width: 90%;
+  vertical-align: middle;
+}
+
+#imgDetails {
+  display: inline-block;
+  margin: auto;
+  width: 75%;
+}
+
+#imgDetails img {
+  display: inline-block;
+  max-width: 90%;
+}
+
+#closeImage {
+  display: inline-block;
+  margin: auto;
+  padding: 2%;
+}
+
+/* Dates */
+#datesCalendar {
+  margin: 5%;
+  padding: 5%;
+  width: 40%;
+}
+
+/* Blues Band */
+#bbContent {
+  padding: 3%;
+  display: inline-block;
+  padding: 2%;
+  width: 55%;
+}
+
+#bbIntro {
+  padding: 2%;
+  color: #331;
+}
+
+#bbHeader {
+  padding: 1% 2%;
+  color: #331;
+  width: 40%;
+  margin: 2% auto;
+}
+
+#bbImages {
+  padding: 2%;
+  color: #331;
+}
+
+#bbImages img {
+  width: 18%;
+}
+
+#theysay {
+  float: right;
+  display: inline-block;
+  width: 38%;
+  background-color: #c8a2c8;
+  color: #331;
+  padding: 1%;
+  border-radius: 3%;
+}
+
+/* Music */
+.musicVideo {
+  display: inline-block;
+  width: 45%;
+  margin: 2%;
+}
+
+/*# sourceMappingURL=style.css.map */
