@@ -14,10 +14,16 @@
 </head>
 
 <body>
-	<div id="main">
-		<div w3-include-html="partials/_navigationbar.html" id="header"></div>
-		<div w3-include-html="partials/_socialicons.html"></div>
-		
+	<div id="header">
+		<div class="headerContainer">
+			<h1 class="nameHeader">Gallery</h1>
+		</div>
+		<div id="navContainer" class="headerContainer">
+			<div w3-include-html="partials/_navigationbar.html"></div>
+		</div>
+	</div>
+	<div w3-include-html="partials/_socialicons.html"></div>
+	<div class="main">
 		<div class="container">			
 			<div id="col1" class="galCol">
 				<div class="galleryimg">
