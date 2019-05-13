@@ -11,29 +11,33 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="js/include.js"></script>
 
-
 </head>
 
 <body>
-	<div id="main">
-		<div w3-include-html="partials/_navigationbar.html" id="header"></div>
-		<div w3-include-html="partials/_socialicons.html"></div>
-		
+	<div id="header">
+		<div class="headerContainer">
+			<h1 class="nameHeader">Latest Videos
+		</div>
+		<div id="navContainer" class="headerContainer">
+			<div w3-include-html="partials/_navigationbar.html"></div>
+		</div>
+	</div>
+	<div w3-include-html="partials/_socialicons.html"></div>
+	<div class="main">
 		<div class="container">
 			<div class="musicVideo">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/IfCHJHCVTIo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe width="450" height="250" src="https://www.youtube.com/embed/aFj8DKsFgo4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
 			<div class="musicVideo">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/IfCHJHCVTIo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe width="450" height="250" src="https://www.youtube.com/embed/A6ynD_vshHo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
 			<div class="musicVideo">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/IfCHJHCVTIo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe width="450" height="250" src="https://www.youtube.com/embed/dO6ZfP532yM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
 			<div class="musicVideo">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/IfCHJHCVTIo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe width="450" height="250" src="https://www.youtube.com/embed/iFbUYPaVae8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
 		</div>
-		
 	</div>
 	
 	<script>includeHTML();</script>
