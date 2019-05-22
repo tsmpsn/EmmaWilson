@@ -15,6 +15,11 @@
   vertical-align: middle;
   width: 35%;
   text-align: center;
+  height: 20%;
+}
+
+.headerContainer img {
+  max-width: 20%;
 }
 
 #navContainer {
