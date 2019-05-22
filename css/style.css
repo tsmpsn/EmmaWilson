@@ -216,7 +216,6 @@ body {
 }
 
 .imgbox img {
-  width: 70%;
   max-height: 50%;
   overflow: hidden;
   padding: 2%;
@@ -338,7 +337,6 @@ body {
 
 /* Gallery */
 .imageOptions {
-  width: 10%;
   display: inline-block;
 }
 
@@ -348,6 +346,13 @@ body {
   margin: auto;
   padding: 5%;
   display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#imgNavigation {
+  margin: 0 10%;
+  display: flex;
 }
 
 .galCol {
@@ -377,7 +382,7 @@ body {
   width: 70%;
   height: 70%;
   text-align: center;
-  margin: 3% auto;
+  margin: auto;
   vertical-align: middle;
   background-color: rgba(200, 162, 200, 0.8);
 }
@@ -395,10 +400,10 @@ body {
   margin: auto;
   width: 90%;
   vertical-align: middle;
+  padding: 5%;
 }
 
 #imgDetails {
-  display: inline-block;
   margin: auto;
   width: 75%;
 }
@@ -455,7 +460,6 @@ body {
   background-color: rgba(200, 162, 200, 0.5);
   color: #331;
   padding: 1%;
-  border-radius: 3%;
   font-family: "Crimson Text", serif;
   margin-top: 4%;
 }
