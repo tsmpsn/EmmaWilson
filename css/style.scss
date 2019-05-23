@@ -83,8 +83,8 @@ $very-dark-purple: rgb(98, 80, 112);
 /* Social Icons */
 
 #socialicons {
-	padding: 2%;
-	margin: 2% 3%;
+	padding: 1%;
+	margin: 0 3%;
 	float: left;
 	text-align: center;
 	position: fixed;
@@ -92,43 +92,22 @@ $very-dark-purple: rgb(98, 80, 112);
 	z-index: 3;
 	display: flex;
 	flex-direction: column;
-}
-/*
-#socialicon {
-	text-align: center;
-	z-index: 3;
-	float: left;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	border: 8px rgba(200, 162, 200, 0.5) solid;
+	height: 80%;
 	justify-content: space-around;
-	width: 30%;
 }
-*/
+
 #socialicons a div {
 	color: #331;
 	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }
 
 .rounded-link {
-	display: inline-block;
-	background-color: $f2;
-	border-radius: 25%;
-	margin: 12% auto;
-	padding: 6%;
-	width: 70%;
-	border: 3px solid $very-dark-purple;
-}
-
-.s-icon {
-}
-
-#socialicons img {
-	vertical-align: middle;
-}
-
-#socialicons p {
-	color: $f2;
+	width: 100%;
+	height: 100%;
 }
 
 .lastchild {
@@ -169,7 +148,7 @@ body {
 	overflow: scroll;
 	border-bottom: 8px $light-purple solid;
 	border-top: 8px $light-purple solid;
-	width: 80%;
+	width: 74%;
 	padding: 0 4% 0 10%;
 }
 	
