@@ -9,6 +9,7 @@ $very-dark-purple: rgb(98, 80, 112);
 
 #header {
 	background-color: $light-purple;
+	border: 8px $light-purple solid;
 	min-height: 10%;
 	margin: 0;
 	position: fixed;
@@ -22,6 +23,11 @@ $very-dark-purple: rgb(98, 80, 112);
 	vertical-align: middle;
 	width: 35%;
 	text-align: center;
+	height: 20%;
+}
+
+.headerContainer img {
+	max-width: 20%;
 }
 
 #navContainer {
@@ -78,8 +84,8 @@ $very-dark-purple: rgb(98, 80, 112);
 /* Social Icons */
 
 #socialicons {
-	padding: 2%;
-	margin: 2% 3%;
+	padding: 1%;
+	margin: 0 3%;
 	float: left;
 	text-align: center;
 	position: fixed;
@@ -87,43 +93,25 @@ $very-dark-purple: rgb(98, 80, 112);
 	z-index: 3;
 	display: flex;
 	flex-direction: column;
-}
-/*
-#socialicon {
-	text-align: center;
-	z-index: 3;
-	float: left;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	border: 8px rgba(200, 162, 200, 0.5) solid;
+	height: 80%;
 	justify-content: space-around;
-	width: 30%;
 }
-*/
+
 #socialicons a div {
 	color: #331;
 	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }
 
 .rounded-link {
-	display: inline-block;
-	background-color: $f2;
-	border-radius: 25%;
-	margin: 12% auto;
-	padding: 6%;
-	width: 70%;
-	border: 3px solid $very-dark-purple;
-}
-
-.s-icon {
-}
-
-#socialicons img {
+	display: flex;
+	align-items: center;
+	max-height: 100%;
+	max-width: 100%;
 	vertical-align: middle;
-}
-
-#socialicons p {
-	color: $f2;
 }
 
 .lastchild {
@@ -162,10 +150,9 @@ body {
 	z-index: 1;
 	position: absolute;
 	overflow: scroll;
-	border-bottom: 8px $light-purple solid;
-	border-top: 8px $light-purple solid;
-	width: 80%;
-	padding: 0 4% 0 10%;
+	border: 8px $light-purple solid;
+	width: 74%;
+	padding-left: 10%;
 }
 	
 .container h1 {
@@ -178,7 +165,6 @@ body {
 }
 
 .text-link {
-	font-family: Alegreya-Bold;
 }
 
 ::-webkit-scrollbar {
@@ -219,20 +205,21 @@ display: none;
 }
 
 #aboutimages {
-	display: inline-block;
-	width: 33%;
-	height: 33%;	
-	float: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 28%;
 	margin-top: 3%;
 }
 
+#aboutimages .imgbox {
+	margin: 5%;
+}
+
+
 .imgbox img {
-	width: 70%;
-	max-height: 50%;
-	overflow: hidden;
-	padding: 2%;
-	margin: auto;
-	display: block;
+	max-height: 100%;
+	max-width: 100%;
 }
 
 #theysay p em {
@@ -351,7 +338,6 @@ display: none;
 /* Gallery */
 
 .imageOptions {
-	width: 10%;
 	display: inline-block;
 }
 
@@ -361,6 +347,13 @@ display: none;
 	margin: auto;
 	padding: 5%;
 	display: inline-block;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#imgNavigation {
+	margin: 0 10%;
+	display: flex;
 }
 
 .galCol {
@@ -390,7 +383,7 @@ display: none;
 	width: 70%;
 	height: 70%;
 	text-align: center;
-	margin: 3% auto;
+	margin: auto;
 	vertical-align: middle;
 	background-color: $dark-purple;
 }
@@ -408,10 +401,10 @@ display: none;
 	margin: auto;
 	width: 90%;
 	vertical-align: middle;
+	padding: 5%;
 }	
 
 #imgDetails {
-	display: inline-block;
 	margin: auto;
 	width: 75%;
 }
@@ -464,16 +457,19 @@ display: none;
 	width: 45%;
 }
 
-#theysay {
-	float:right;
+#bluesbandright {
+	margin-top: 4%;
 	display: inline-block;
+	float:right;
 	width: 38%;
+}
+
+#theysay {
+	display: inline-block;
 	background-color: $light-purple;
 	color: #331;
 	padding: 1%;
-	border-radius: 3%;
 	font-family: 'Crimson Text', serif;
-	margin-top: 4%;
 }
 
 .right iframe {
