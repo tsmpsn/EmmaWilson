@@ -85,7 +85,7 @@ $very-dark-purple: rgb(98, 80, 112);
 
 #socialicons {
 	padding: 1%;
-	margin: 0 3%;
+	margin: 0 8.5%;
 	float: left;
 	text-align: center;
 	position: fixed;
@@ -144,15 +144,14 @@ body {
 	color: $very-dark-purple;
 	display: inline-block;
 	font-family: 'Open Sans', sans-serif;
-	margin: 0px;
+	margin: 0 8.5%;
 	height: 80%;
-	margin-left: 3%;
 	z-index: 1;
-	position: absolute;
 	overflow: scroll;
 	border: 8px $light-purple solid;
 	width: 74%;
-	padding-left: 10%;
+	padding-left: 8%;
+	position: absolute;
 }
 	
 .container h1 {
@@ -209,6 +208,7 @@ display: none;
 	flex-direction: column;
 	justify-content: space-around;
 	width: 28%;
+	marign: auto;
 	margin-top: 3%;
 }
 
