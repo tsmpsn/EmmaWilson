@@ -195,7 +195,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   width: 28%;
-  marign: auto;
+  margin: auto;
   margin-top: 3%;
 }
 
@@ -415,13 +415,26 @@ body {
 /* Blues Band */
 #bbContent {
   display: inline-block;
-  padding: 2%;
-  width: 55%;
+  width: 59%;
   font-size: 90%;
+  text-align: center;
 }
 
-#bbIntro {
-  padding: 2%;
+#bbContentLeft {
+  display: inline-block;
+  padding: 0 2%;
+  width: 45%;
+}
+
+#bbContentRight {
+  display: inline-block;
+  padding: 5% 0;
+  width: 45%;
+}
+
+#bbContentRight img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 #bbHeader {
@@ -432,25 +445,44 @@ body {
 
 #bbImages {
   padding: 2%;
+  display: flex;
+  justify-content: space-between;
 }
 
 #bbImages img {
-  width: 45%;
+  max-width: 45%;
+  max-height: 45%;
 }
 
 #bluesbandright {
-  margin-top: 4%;
+  padding-top: 4%;
   display: inline-block;
   float: right;
   width: 38%;
+  font-family: "Crimson Text", serif;
+  border-left: 8px rgba(200, 162, 200, 0.8) solid;
+}
+
+#bluesbandright h2 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#bmName {
+  display: inline-block;
+  padding: 5% 5% 5% 15%;
+}
+
+#bmRole {
+  display: inline-block;
+  padding: 5%;
 }
 
 #theysay {
   display: inline-block;
   background-color: rgba(200, 162, 200, 0.5);
   color: #331;
-  padding: 1%;
-  font-family: "Crimson Text", serif;
+  padding: 3%;
 }
 
 .right iframe {
