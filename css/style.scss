@@ -94,7 +94,8 @@ $very-dark-purple: rgb(98, 80, 112);
 	display: flex;
 	flex-direction: column;
 	border: 8px rgba(200, 162, 200, 0.5) solid;
-	height: 80%;
+	border-right: 5px rgba(200, 162, 200, 0.5) solid;
+	height: 76%;
 	justify-content: space-around;
 }
 
@@ -178,20 +179,18 @@ display: none;
 	width: 60%;
 	font-size: 115%;
 	padding: 2%;
+	border-right: 3px rgba(200, 162, 200, 0.5) solid;
 }
 
 #about p {
 	font-size: 90%;
+	display: inline-block;
 }
 
 #about h3 {
 	text-align: center;
 	margin: 1%;
 	color: $f2;
-}
-
-#about p {
-	display: inline-block;
 }
 
 #about .imgbox {
@@ -207,9 +206,9 @@ display: none;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	width: 28%;
+	width: 31%;
 	margin: auto;
-	margin-top: 3%;
+	padding: 2%
 }
 
 #aboutimages .imgbox {
@@ -226,9 +225,14 @@ display: none;
 	font-size: 80%;
 }
 
+#showreelContainer {
+	text-align: center;
+	width: 100%;
+}
+
 #bookings {
 	border: solid 2px $very-dark-purple;
-	margin: 0 3%;
+	margin: 0 1%;
 	padding: 2%;
 	text-align: center;
 }
@@ -440,8 +444,10 @@ display: none;
 
 #bbContentLeft {
 	display: inline-block;
-	padding: 0 2%;
+	vertical-align: top;
+	padding: 3% 2%;
 	width: 45%;
+	text-align: left;
 }
 
 #bbContentRight {
@@ -468,8 +474,8 @@ display: none;
 }
 
 #bbImages img {
-	max-width:45%;
-	max-height:45%;
+	width:45%;
+	height:45%;
 }
 
 #bluesbandright {
@@ -478,7 +484,7 @@ display: none;
 	float: right;
 	width: 38%;
 	font-family: 'Crimson Text', serif;
-	border-left: 8px $dark-purple solid;
+	border-left: 3px $dark-purple solid;
 }
 
 #bluesbandright h2 {

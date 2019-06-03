@@ -86,7 +86,8 @@
   display: flex;
   flex-direction: column;
   border: 8px rgba(200, 162, 200, 0.5) solid;
-  height: 80%;
+  border-right: 5px rgba(200, 162, 200, 0.5) solid;
+  height: 76%;
   justify-content: space-around;
 }
 
@@ -165,20 +166,18 @@ body {
   width: 60%;
   font-size: 115%;
   padding: 2%;
+  border-right: 3px rgba(200, 162, 200, 0.5) solid;
 }
 
 #about p {
   font-size: 90%;
+  display: inline-block;
 }
 
 #about h3 {
   text-align: center;
   margin: 1%;
   color: #f2f2f2;
-}
-
-#about p {
-  display: inline-block;
 }
 
 #about .imgbox {
@@ -194,9 +193,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 28%;
+  width: 31%;
   margin: auto;
-  margin-top: 3%;
+  padding: 2%;
 }
 
 #aboutimages .imgbox {
@@ -212,9 +211,14 @@ body {
   font-size: 80%;
 }
 
+#showreelContainer {
+  text-align: center;
+  width: 100%;
+}
+
 #bookings {
   border: solid 2px #625070;
-  margin: 0 3%;
+  margin: 0 1%;
   padding: 2%;
   text-align: center;
 }
@@ -422,8 +426,10 @@ body {
 
 #bbContentLeft {
   display: inline-block;
-  padding: 0 2%;
+  vertical-align: top;
+  padding: 3% 2%;
   width: 45%;
+  text-align: left;
 }
 
 #bbContentRight {
@@ -450,8 +456,8 @@ body {
 }
 
 #bbImages img {
-  max-width: 45%;
-  max-height: 45%;
+  width: 45%;
+  height: 45%;
 }
 
 #bluesbandright {
@@ -460,7 +466,7 @@ body {
   float: right;
   width: 38%;
   font-family: "Crimson Text", serif;
-  border-left: 8px rgba(200, 162, 200, 0.8) solid;
+  border-left: 3px rgba(200, 162, 200, 0.8) solid;
 }
 
 #bluesbandright h2 {
