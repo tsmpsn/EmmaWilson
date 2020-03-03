@@ -21,7 +21,7 @@ $very-dark-purple: rgb(98, 80, 112);
 .headerContainer {
 	display: inline-block;
 	vertical-align: middle;
-	width: 35%;
+	width: 24%;
 	text-align: center;
 	height: 20%;
 }
@@ -31,7 +31,7 @@ $very-dark-purple: rgb(98, 80, 112);
 }
 
 #navContainer {
-	width: 60%;
+	width: 75%;
 }
 
 #navContainer a {
@@ -85,7 +85,7 @@ $very-dark-purple: rgb(98, 80, 112);
 
 #socialicons {
 	padding: 1%;
-	margin: 0 3%;
+	margin: 0 8.5%;
 	float: left;
 	text-align: center;
 	position: fixed;
@@ -94,7 +94,8 @@ $very-dark-purple: rgb(98, 80, 112);
 	display: flex;
 	flex-direction: column;
 	border: 8px rgba(200, 162, 200, 0.5) solid;
-	height: 80%;
+	border-right: 5px rgba(200, 162, 200, 0.5) solid;
+	height: 76%;
 	justify-content: space-around;
 }
 
@@ -109,8 +110,8 @@ $very-dark-purple: rgb(98, 80, 112);
 .rounded-link {
 	display: flex;
 	align-items: center;
-	max-height: 100%;
-	max-width: 100%;
+	max-height: 90%;
+	max-width: 90%;
 	vertical-align: middle;
 }
 
@@ -126,6 +127,7 @@ body {
 	/*background-color: rgba(252,238,189, 1);*/
 	margin: 0;
 	overflow: hidden;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
 }
 
 .container a {
@@ -144,15 +146,15 @@ body {
 	color: $very-dark-purple;
 	display: inline-block;
 	font-family: 'Open Sans', sans-serif;
-	margin: 0px;
+	margin: 0 8.5%;
 	height: 80%;
-	margin-left: 3%;
 	z-index: 1;
-	position: absolute;
 	overflow: scroll;
 	border: 8px $light-purple solid;
 	width: 74%;
-	padding-left: 10%;
+	padding-left: 8%;
+	position: absolute;
+	line-height: 20pt;
 }
 	
 .container h1 {
@@ -164,11 +166,8 @@ body {
 	font-size: 95%;
 }
 
-.text-link {
-}
-
 ::-webkit-scrollbar {
-display: none;
+	display: none;
 }
 
 /* Home */
@@ -176,23 +175,20 @@ display: none;
 #about {
 	float: left;
 	display: inline-block;
-	width: 60%;
+	width: 55%;
 	font-size: 115%;
-	padding: 2%;
+	padding: 2% 4%;
 }
 
 #about p {
 	font-size: 90%;
+	display: inline-block;
 }
 
 #about h3 {
 	text-align: center;
 	margin: 1%;
 	color: $f2;
-}
-
-#about p {
-	display: inline-block;
 }
 
 #about .imgbox {
@@ -208,14 +204,38 @@ display: none;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	width: 28%;
-	margin-top: 3%;
+	width: 31%;
+	padding: 2%;
 }
 
 #aboutimages .imgbox {
 	margin: 5%;
 }
 
+#magIntro {
+	display: inline-block;
+	text-align: center;
+}
+
+#magText {
+	display: inline-block;
+	width: 43%;
+	vertical-align: top;
+	padding-left: 5%;
+	text-align: left;
+	line-height: 25pt;
+}
+
+#magText p {
+	margin: 0;
+}
+
+#magPhoto {
+	display: inline-block;
+	max-width: 60%;
+	max-height: 80%;
+	width: 48%;
+}
 
 .imgbox img {
 	max-height: 100%;
@@ -226,12 +246,6 @@ display: none;
 	font-size: 80%;
 }
 
-#bookings {
-	border: solid 2px $very-dark-purple;
-	margin: 0 3%;
-	padding: 2%;
-	text-align: center;
-}
 
 /* Guest Vocalist */
 
@@ -431,45 +445,78 @@ display: none;
 
 /* Blues Band */
 
-#bbContent {
+#bluesbandleft {
 	display: inline-block;
-	padding: 2%;
-	width: 55%;
+	width: 59%;
 	font-size: 90%;
+	text-align: center;
 }
 
-#bbIntro {
-	padding: 2%;
+#bbText {
+	text-align: left;
+	padding: 4%;
+	line-height: 20pt;
+}
+
+#bbImages {
+	padding: 3%;	
+}
+
+#bbImages img {
+	width: 45%;	
+}
+
+#bbContentRight img{
+	max-height: 100%;
+	max-width: 100%;
 }
 
 #bbHeader {
 	padding: 1%	2%;
 	width: 40%;
 	margin: 2% auto;
-	
 }
 
 #bbImages {
 	padding: 2%;
+	display: flex;
+	justify-content: space-between;
 }
 
 #bbImages img {
-	width: 45%;
+	width:45%;
+	height:45%;
 }
 
 #bluesbandright {
-	margin-top: 4%;
+	padding-top: 4%;
 	display: inline-block;
-	float:right;
+	float: right;
 	width: 38%;
+	font-family: 'Crimson Text', serif;
+	border-left: 3px $dark-purple solid;
+}
+
+#bluesbandright h2 {
+	text-align: center;
+	margin: 0 auto;	
+}
+
+#bmName {
+	display: inline-block;
+	padding: 5% 5% 5% 15%;
+}
+
+#bmRole {
+	display: inline-block;
+	padding: 5%;
 }
 
 #theysay {
 	display: inline-block;
 	background-color: $light-purple;
 	color: #331;
-	padding: 1%;
-	font-family: 'Crimson Text', serif;
+	padding: 3%;
 }
 
 .right iframe {
@@ -483,9 +530,10 @@ display: none;
 	display: inline-block;
 	width: 45%;
 	margin: 2%;
+	text-align: center;
 }
 
-.musicVideo iframe {
+.mVideo {
 	margin: auto 10%;
 }
 
@@ -493,4 +541,46 @@ display: none;
 	margin: 0;
 	text-align: center;
 	font-size: 95%;
+}
+
+.trackDetails {
+	width: 100%;
+	text-align: left;
+}
+
+.songLength {
+	float: right;
+	margin-right: 10%;
+}
+
+/* Get in Touch */
+
+#contactInformation {
+	float: left;
+	display: inline-block;
+	width: 55%;
+	font-size: 115%;
+	padding: 2% 4%;
+	height: 100%;
+}
+
+.bookings {
+	border: solid 2px $very-dark-purple;
+	margin: 0 1%;
+	padding: 2%;
+	text-align: center;
+}	
+
+.centerItem {
+	text-align: center;
+	max-width: 100%;
+}
+
+.nospmismotImage {
+	max-width: 60%;
+}
+
+
+.mainContent {
+	border-right: 3px rgba(200, 162, 200, 0.5) solid;
 }
