@@ -45,6 +45,7 @@ $very-dark-purple: rgb(98, 80, 112);
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 	color: $very-dark-purple;
+	letter-spacing: 3px;
 }
 
 #logos {
@@ -240,9 +241,18 @@ body {
 	margin-right: auto;
 }
 
-#magIntro {
+#bmReview {
 	display: inline-block;
 	text-align: center;
+}
+
+#bmReview .imgBox {
+	display: inline-block;
+	margin: auto;
+	width: 30%;
+	height: 35%;
+	text-align: center;
+	padding: 0 9%
 }
 
 #magText {
@@ -257,7 +267,7 @@ body {
 	margin: 0;
 }
 
-#magPhoto {
+.magPhoto {
 	display: inline-block;
 	max-width: 60%;
 	max-height: 80%;
