@@ -79,7 +79,6 @@
 
 #socialicons {
 	padding: 1%;
-	margin: 0 8.5%;
 	float: left;
 	text-align: center;
 	position: fixed;
@@ -138,7 +137,6 @@ body {
 }
 
 .container {
-	margin: 0 8.5%;
 	background-color: rgba(200,162,200, 0.5);
 	color: rgb(98, 80, 112);
 	display: inline-block;
@@ -147,7 +145,6 @@ body {
 	z-index: 1;
 	overflow: scroll;
 	border: 8px rgba(200,162,200, 0.5) solid;
-	width: 74%;
 	padding-left: 8%;
 	position: absolute;
 	line-height: 20pt;
@@ -226,7 +223,7 @@ body {
 /* News */
 
 #albumDetails {
-	border: 3px rgba(200, 162, 200, 0.5) solid;
+	border: 5px rgba(200, 162, 200, 0.5) solid;
 }
 
 #newAlbum {
@@ -444,6 +441,10 @@ body {
 	margin: auto;
 }
 
+#uglyimg {
+	text-align: center;
+}
+
 /* Gallery */
 
 .imageOptions {
@@ -565,7 +566,7 @@ body {
 
 #bbText {
 	text-align: left;
-	padding: 4%;
+	padding: 0 4%;
 	line-height: 20pt;
 }
 
