@@ -49,18 +49,20 @@
 	letter-spacing: 3px;
 }
 
-#logos {
+/* #logos {
 	margin-top: 5%;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	padding: 0 20%;
 }
-
+ 
 .logoImg {
 	max-height: 100px;
 	max-width: 100px;
 }
+
+*/
 
 #nav a {
 	border-right-color: #F5F0DD;
@@ -76,12 +78,13 @@
 	vertical-align: middle;
 }
 
+/*
 #navlogo {
 	float: right;
 	padding: 2%;
 	position: fixed;
 	z-index: 59999;
-}
+}*/
 
 /* Social Icons */
 
@@ -115,14 +118,12 @@
 .rounded-link {
 	display: flex;
 	align-items: center;
-	justify-content: middle;
-	max-height: 90%;
-	max-width: 90%;
+	text-align: center;
 	vertical-align: middle;
 }
 
 .rounded-link img {
-	width: 90%;
+	width: 4vw;
 }
 
 #facebooksi img {
@@ -147,29 +148,28 @@ body {
 	width: 23vw;
 }
 
-.row {
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: space-evenly;
-}
-
 .column {
 	flex-direction: column;
 }
 
-/* .centre { */
-	/* justify-content: space-around; */
-	/* align-items: center; */
-/* } */
+.row {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
 
 .columnTwo {
-	width: 40vw;
+	justify-content: space-evenly;
 	margin: auto;
 }
 
 .zoom {
   transition: transform .2s; /* Animation */
   margin: 0 auto;
+}
+
+.block {
+	display: block;
 }
 
 .zoom:hover {
@@ -180,6 +180,16 @@ body {
 .vVideo video {
 	height: 100vh;
 	width: 20vw;
+}
+
+.author {
+	font-style: italic;
+}
+
+// Simple 
+
+.centre {
+	text-align: center;
 }
 
 /* #region Containers */
@@ -211,7 +221,7 @@ body {
 }
 
 .container a {
-	color: #Fff;
+	color: rgba(200,162,200, 0.8);
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -219,6 +229,18 @@ body {
 .mainContainer {
 	display: inline-block;
 	width: 60vw;
+	float: left;
+	font-size: 115%;
+	padding: 1vw 1.5vw;
+	border-left: 0.5vw #F5F0DD solid;
+	border-right: 0.5vw #F5F0DD solid;
+	min-height: 100vw;
+}
+
+
+.largeContainer {
+	width: 85vw;
+	display: inline-block;
 	float: left;
 	font-size: 115%;
 	padding: 1vw 1.5vw;
@@ -237,11 +259,15 @@ body {
 
 .sidebarContainer .imgbox {
 	width: 20vw;
-	margin: 5%;
+	margin: 5vw;
+}
+
+.sidebarContainer .musicVideo {
+	padding: 1vh 0;
 }
 
 .box {
-	width: 45%;
+	width: 32vw;
 	margin: auto;
 	padding: 1%;
 	display: inline-block;
@@ -268,19 +294,24 @@ body {
 
 /* Home */
 
+albumImage {
+	justify-content: center;
+	margin: auto;
+}
+
 #albumDetails {
-	border: 0.2vw #F5F0DD solid;
 	height: 25vw;
 	display: flex;
 	flex-direction: row;
 }
 
-#newAlbum {
+.newAlbum {
 	width: 100%;
 	margin-bottom: 5%;
+	text-align: center;
 }
 
-#newAlbum img {
+.newAlbum img {
 	height: 100%;
 	width: 100%;
 }
@@ -288,26 +319,13 @@ body {
 #albumImage {
 	margin-left: auto;
 	margin-right: auto;
-	width: 20vw;
+	width: 50vw;
 }
 
 #albumText {
-	width: ;
 	vertical-align: top;
 	margin-left: auto;
 	padding: 2%;
-}
-
-#tracklist {
-}
-
-.track {
-	width: 80%;
-	font-family: 'Tenali Ramakrishna', sans-serif;
-	font-size: 90%;
-	padding: 2% 1%;
-	display: block;
-	margin: 5% auto;
 }
 
 #albumVideos {
@@ -328,7 +346,7 @@ body {
 
 #home h2 {
 	text-align: center;
-	margin: 1%;
+	margin: 1vw;
 }
 
 #home h6 {
@@ -337,13 +355,9 @@ body {
 	font-size: 95%;
 }
 
-#home .imgbox {
-	display: inline-block;
-	margin: auto;
-	width: 30%;
-	height: 35%;
-	text-align: center;
-	padding: 0 9%;
+.soiImage img {
+	width: 23vw;
+	margin: 0 auto;
 }
 
 .imgbox img {
@@ -431,7 +445,6 @@ body {
 
 #portfolioNavigation {
 	margin: 2% 0;
-	background-color: #f2f2f2;
 	border: solid 3px #F5F0DD;
 	padding: 2%;
 	color: #331;
@@ -534,13 +547,6 @@ body {
 	margin: 0;
 }
 
-#imgBox {
-	margin: auto;
-	width: 90%;
-	vertical-align: middle;
-	padding: 5%;
-}	
-
 #imgDetails {
 	margin: auto;
 	width: 75%;
@@ -627,8 +633,6 @@ body {
 
 .musicVideo {
 	display: inline-block;
-	width: 20vw;
-	margin: 2%;
 	text-align: center;
 }
 
@@ -637,7 +641,8 @@ body {
 }
 
 .mVideo {
-	height: 20vh;
+	height: 17vh;
+	width: 17vw;
 }
 
 #pressContainer {
@@ -646,6 +651,8 @@ body {
 
 .pressArticle {
 	display: flex;
+	justify-content: space-between;
+}
 }
 
 .pressArticle .row {
@@ -653,7 +660,7 @@ body {
 }
 
 .pressArticle img {
-	width: 20vw;
+	width: 15vw;
 }
 
 .pressArticleText {

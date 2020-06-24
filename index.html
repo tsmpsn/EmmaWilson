@@ -16,67 +16,111 @@
 
 <body onload="includeHTML()">
 	<div id="header">
-		<div id="logo" class="headerContainer">
+		<div id="logoContainer">
 			<img src="img/logotext.png" />
 		</div>
-		<div id="navContainer" class="headerContainer">
+		<div id="navContainer">
 			<div w3-include-html="partials/_navigationbar.html"></div>
 		</div>
 	</div>
 	<div class="main">
 		<div class="container">
-		<div class="iconsHolder" w3-include-html="partials/_socialicons.html"></div>
-			<div class="mainContainer hiddenscrollbar">
-				<div id="newAlbum">
+			<div class="iconsHolder" w3-include-html="partials/_socialicons.html"></div>
+			<div id="home" class="mainContainer hiddenscrollbar">
+				<h2 class="letterSpacing">Emma Wilson</h2>
+				<h6 class="letterSpacing">BLUES SIREN : AWARD WINNING SINGER & SONGWRITER</h6>
+				<br />
+				<div class="newAlbum soiImage">
+					<img src="img/SOI.jpg" />
+					<p>Emma's Lockdown Song "Hold On" is on "Songs of Isolation" and album curated by Mike Rivers of "The Crawdaddy Club" Richmond, London. All proceeds for NHS Charities. <br />
+					<a href="https://lockdownmusicproject.bandcamp.com/album/the-crawdaddy-club-richmond-presents-songs-of-isolation">Click here to Buy</a>
+				</div>
+				<div class="newAlbum">
 					<div id="albumDetails">
 						<div id="albumImage" class="box inline">
-							<a href="https://store.cdbaby.com/cd/emmawilson2"><img src="img/albumcover.jpg"/></a>
-						</div>
-						<div id="tracklist" class="box inline">
-							<div class="track">
-								01 - Wish her well
-							</div>
-							<div class="track">
-								02 - I'm gonna tear your playhouse down (E.Randle)
-							</div>
-							<div class="track">
-								03 - I put a spell on you (J.Hawkins) 
-							</div>
-							<div class="track">
-								04 - Night time is the right time (R.Sykes)
-							</div>
-							<div class="track">
-								05 - Hoochie coochie mama (W.Dixon) 
-							</div>
-						</div>
-						<div id="albumText">
-							Here's Emma's album of her favourite blues songs and an original teaser! Be one of the first to own this classic by clicking the album cover above. Currently at 12 in the IBBA (Independent Blues Broadcasters Association) Chart.
+							<img src="img/liveandacoustic.jpg"/></a>
 						</div>
 					</div>
-				</div>
-				<div id="bmReview">
-					<div class="middle"> 
-						<img class="magPhoto" src="img/bluesmatters.jpg" />
-						<img class="magPhoto" src="img/bluesmattersarticle.png" />
-					</div>
-					<span id="magText">
-					<p>
-						Emma's <a class="text-link" href="BluesBand.html">Blues Band</a> are touring and recording.
-						Information about Emma's upcoming gigs can be found on her <a href="https://www.facebook.com/pg/EmmaWilsonBluesBand/events/" target="_blank"> facebook page</a>.
-					</p><br />
-					<p>She is featured in the Aug/Sept 2019 issue 109 of Blues Matters Magazine. (cover on the left)</p>
 					<br />
-					<p>
-						Emma will also feature in the November issue of "Blues in Britain" magazine in the "Introducing" section, there you can see her
-						talk about how she got into blues, her career so far and plans for the future. Copies can be bought <a href="http://www.bluesinbritain.org/" target="_blank">here</a>.
-					</p>
-					</span>
+					<div id="albumVideos">
+						<div class="row">
+							<div class="musicVideo">
+								<video class="mVideo video-fluid z-depth-1" loop controls muted>
+								  <source src="vid/wish her well ep.mp4" type="video/mp4" />
+								</video><br />
+								<p>Wish her Well (Emma Wilson)</p>
+							</div>
+							<div class="musicVideo">
+								<video class="mVideo video-fluid z-depth-1" loop controls muted>
+								  <source src="vid/playhouse.mp4" type="video/mp4" />
+								</video><br />
+								<p>I'm gonna tear your playhouse down</p>
+							</div>
+							<div class="musicVideo">
+								<video class="mVideo video-fluid z-depth-1" loop controls muted>
+								  <source src="vid/spell on you ep.mp4" type="video/mp4" />
+								</video><br />
+								<p>I put a spell on you (Jelacy Hawkins)</p>
+							</div>
+						</div>
+						<br/>
+						<div class="row">
+							<div class="musicVideo">
+								<video class="mVideo video-fluid z-depth-1" loop controls muted>
+								  <source src="vid/night time.mp4" type="video/mp4" />
+								</video><br />
+								<p>Night time is the right time (Roosvelt Sykes)</p>
+							</div>
+							<div class="musicVideo">
+								<video class="mVideo video-fluid z-depth-1" loop controls muted>
+								  <source src="vid/night time.mp4" type="video/mp4" />
+								</video><br />
+								<p>Hoochie Coochie Mama (Willie Dixon)</p>
+							</div>
+						</div>
+						<hr>
+					</div>
+					<div id="albumText">
+						<h3>EMMA'S EP "LIVE & ACOUSTIC" INDEPENDENTLY RELEASED IN MARCH 2019</h3>
+						<p>
+							INNER "BEST LIVE ALBUM 2019" - 
+							<span class="author">DOCTOR WART HOOVER : BLUES AWARDS , SEVERN FM</span>
+						</p>
+						<p>
+							No11 IN TOP 40 MOST PLAYED ALBUMS 2019 - 
+							<span class="author">INDEPENDENT BLUES BROADCASTERS ASSOCIATION</span>
+						</p>
+						<p>
+							"OUTSTANDING NEWCOMER TO THE WORLD OF BLUES" - 
+							<span class="author">Doc's Blues Awards 2019 : Revolution Radio Online</span>
+						</p>
+						<p>
+							"AN EXCELLENT VOICE , 100% RAW POWER" - 
+							<span class="author">Blues in Britain Magazine</span>
+						</p>
+						<p>
+							"GOLD WAITING TO BE DISCOVERED" - 
+							<span class="author">Blues Matters Magazine</span>
+						</p>
+					</div>
+					<div>
+						<img src="img/FEELGOOD EP.jpg" />
+						<h4>
+							FOR COPIES OF "LIVE & ACOUSTIC" AND "FEELGOOD" EPS e-mail emmawilsonbluesband@gmail.com <br />
+							Available on all digital platforms <br />
+							- iTunes <br />
+							- Spotify <br />
+							- deezer <br />
+							- and more <br />
+						</h4>
+					</div>
 				</div>
 			</div>
-
 			<div class="sidebarContainer">
 				<div class="imgbox">
-					<img src="img/front2.jpg" alt="front2" />
+					<img src="img/home2.jpg" />
+					<img src="img/home1.jpg" />
+					<img src="img/bb5.jpg" />
 				</div>
 			</div>
 		</div>
