@@ -259,7 +259,7 @@ body {
 
 .sidebarContainer .imgbox {
 	width: 20vw;
-	margin: 5vw;
+	margin: 2vw;
 }
 
 .sidebarContainer .musicVideo {
@@ -326,6 +326,10 @@ albumImage {
 	vertical-align: top;
 	margin-left: auto;
 	padding: 2%;
+}
+
+#albumText p {
+	margin: 1vw;
 }
 
 #albumVideos {
