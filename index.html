@@ -16,9 +16,6 @@
 
 <body onload="includeHTML()">
 	<div id="header">
-		<div id="logoContainer">
-			<img src="img/logotext.png" />
-		</div>
 		<div id="navContainer">
 			<div w3-include-html="partials/_navigationbar.html"></div>
 		</div>
@@ -26,40 +23,84 @@
 	<div class="main">
 		<div class="container">
 			<div class="iconsHolder" w3-include-html="partials/_socialicons.html"></div>
-			<div id="home" class="mainContainer hiddenscrollbar">
-				<h2 class="letterSpacing">Emma Wilson</h2>
-				<h6 class="letterSpacing">BLUES SIREN : AWARD WINNING SINGER & SONGWRITER</h6>
-				<br />
-				<div class="newAlbum soiImage">
-					<img src="img/SOI.jpg" />
-					<p>Emma's Lockdown Song "Hold On" is on "Songs of Isolation". Album curated by Mike Rivers of "The Crawdaddy Club" Richmond, London. All proceeds for NHS Charities. <br />
-					<a href="https://lockdownmusicproject.bandcamp.com/album/the-crawdaddy-club-richmond-presents-songs-of-isolation">Click here to Buy</a>
-				</div>
-				<hr>
-				<div class="newAlbum">
-					<h3>EMMA'S EP "LIVE & ACOUSTIC" INDEPENDENTLY RELEASED IN MARCH 2019</h3>
+			<div class="mainContainer  col-10 hiddenScrollbar">
+				<div class="newAlbum col-9">
+					<div class="centerItem">
+						<video width="90%" controls>
+							<source src="vid/promo.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+					<div>
+						<h2 class="letterSpacing center">FEELGOOD EP INDEPENDENT RELEASE JUNE 2020</h2>
+						<div class="albumImage">
+							<img src="img/FEELGOOD EP.jpg" />
+						</div>
+						<div id="albumVideo">
+						<p>
+							DURING LOCKDOWN EMMA COMPILED AND INDEPENDENTLY RELEASED THE EP &quot;FEELGOOD&quot; NAMED AS A REFERENCE TO THE TITLE TRACK BUT ALSO TO REMIND HERSELF AND FANS THAT WE WILL BE BACK AND FEELING GOOD AGAIN...
+						</p>
+						<div class="row">
+							<div class="musicVideo">
+								<iframe src="https://www.youtube.com/embed/1ay_4IRJpMs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<p>Dr Feelgood</p>
+							</div>
+							<div class="musicVideo">
+								<iframe src="https://www.youtube.com/embed/Uifg3qH5LAo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<p>Today I sing the blues</p>
+							</div>
+						</div>
+						<p>	
+							THE REACTION TO THE EP HAS BEEN FANTASTIC, EVERYONE SEEMED TO ENJOY THE INTIMACY AND AUTHENTICITY OF THE PURE PIANO &amp; VOCAL PRODUCTION, SO MUCH SO THAT &quot;FEELGOOD&quot; REACHED:
+						</p>
+						<p>
+							NO.1 IN THE &quot;INDEPENDENT BLUES BROADCASTERS ASSOCIATION&quot; (IBBA) MOST PLAYED TRACKS FOR JULY 2020
+						</p>
+						<br/>
+						<div class="row">
+							<div class="musicVideo">
+								<iframe src="https://www.youtube.com/embed/_6vYH74YCf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<p>Sunday kind of love</p>
+							</div>
+							<div class="musicVideo">
+								<iframe src="https://www.youtube.com/embed/0RdppRczjr8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<p>Nobody's fault but mine</p>
+							</div>
+						</div>
+						<p>
+							NO 59 IN THE EUROPEAN CHART &quot;HIT TRACKS TOP 100&quot;
+						</p>
+						<p>
+							NO.3 WRFG ATLANTA CHART AUGUST 2020
+						</p>
+						<p>
+							AND HAS BEEN PLAYED BY RADIO STATIONS WORLDWIDE
+						</p>
+					</div>
+					<hr />
+					<h3>EMMA'S EP &quot;LIVE &amp; ACOUSTIC&quot; INDEPENDENTLY RELEASED IN MARCH 2019</h3>
 					<div id="albumDetails">
-						<div id="albumImage" class="box inline">
+						<div class="albumImage inline">
 							<img src="img/liveandacoustic.jpg"/></a>
 						</div>
 					</div>
 					<br />
-					<div id="albumVideos">
+					<div id="albumVideo">
 						<div class="row">
 							<div class="musicVideo">
-								<video class="mVideo video-fluid z-depth-1" loop controls muted>
+								<video class="mVideo col-2 video-fluid z-depth-1" loop controls muted>
 								  <source src="vid/wish her well ep.mp4" type="video/mp4" />
 								</video><br />
 								<p>Wish her Well (Emma Wilson)</p>
 							</div>
 							<div class="musicVideo">
-								<video class="mVideo video-fluid z-depth-1" loop controls muted>
+								<video class="mVideo col-2 video-fluid z-depth-1" loop controls muted>
 								  <source src="vid/playhouse.mp4" type="video/mp4" />
 								</video><br />
 								<p>I'm gonna tear your playhouse down</p>
 							</div>
 							<div class="musicVideo">
-								<video class="mVideo video-fluid z-depth-1" loop controls muted>
+								<video class="mVideo col-2 video-fluid z-depth-1" loop controls muted>
 								  <source src="vid/spell on you ep.mp4" type="video/mp4" />
 								</video><br />
 								<p>I put a spell on you (Jelacy Hawkins)</p>
@@ -68,24 +109,23 @@
 						<br/>
 						<div class="row">
 							<div class="musicVideo">
-								<video class="mVideo video-fluid z-depth-1" loop controls muted>
+								<video class="mVideo col-2 video-fluid z-depth-1" loop controls muted>
 								  <source src="vid/night time.mp4" type="video/mp4" />
 								</video><br />
 								<p>Night time is the right time (Roosvelt Sykes)</p>
 							</div>
 							<div class="musicVideo">
-								<video class="mVideo video-fluid z-depth-1" loop controls muted>
+								<video class="mVideo col-2 video-fluid z-depth-1" loop controls muted>
 								  <source src="vid/night time.mp4" type="video/mp4" />
 								</video><br />
 								<p>Hoochie Coochie Mama (Willie Dixon)</p>
 							</div>
 						</div>
-						<hr>
 					</div>
 					<hr>
 					<div id="albumText">
 						<p>
-							WINNER "BEST LIVE ALBUM 2019" - 
+							WINNER &quot;BEST LIVE ALBUM 2019&quot; - 
 							<span class="author">DOCTOR WART HOOVER : BLUES AWARDS , SEVERN FM</span>
 						</p>
 						<p>
@@ -93,11 +133,11 @@
 							<span class="author">INDEPENDENT BLUES BROADCASTERS ASSOCIATION</span>
 						</p>
 						<p>
-							"OUTSTANDING NEWCOMER TO THE WORLD OF BLUES" - 
+							&quot;OUTSTANDING NEWCOMER TO THE WORLD OF BLUES&quot; - 
 							<span class="author">Doc's Blues Awards 2019 : Revolution Radio Online</span>
 						</p>
 						<p>
-							"AN EXCELLENT VOICE , 100% RAW POWER" - 
+							&quot;AN EXCELLENT VOICE , 100% RAW POWER&quot; - 
 							<span class="author">Blues in Britain Magazine</span>
 						</p>
 						<p>
@@ -105,36 +145,55 @@
 							<span class="author">Blues Matters Magazine</span>
 						</p>
 					</div>
-					<div>
-						<h3>EMMA'S EP FEELGOOD INDEPENDENT RELEASE JUNE 2020</h3>
-						<img src="img/FEELGOOD EP.jpg" />
-						<h4>
-							FOR COPIES OF "LIVE & ACOUSTIC" AND "FEELGOOD" EPS e-mail emmawilsonbluesband@gmail.com <br />
-							Available on all digital platforms <br />
-							- iTunes <br />
-							- Spotify <br />
-							- deezer <br />
-							- and more <br />
-						</h4>
-					</div>
-				</div>			
+				</div>
+				<hr />
+				<div id="quotes" class="col-9">
+					<span class="gold">
+						BRITISH BLUES SIREN EMMA WILSON HAILS FROM TEESSIDE &#45; THE HOME OF MANY GREAT MUSICAL ARTISTS. EMMA HAS A FABULOUS & DYNAMIC VOICE, MOVING EFFORTLESSLY FROM HEARTWRENCHING SWEET SOUL LICKS TO POWERFUL REAL BLUES.
+					</span>
+					<span class="cream">
+						ON RECORD EMMA&apos;S TONE AND DELIVERY IS GORGEOUS, BEING TENDER AND UNIQUE - WITH SHADES OF EARLY ARETHA FRANKLIN & LOVELY REFERENCES TO EMMA&apos;S OTHER SOUL ICON ANN PEEBLES.
+					</span>
+					<span class="gold">
+						EMMA'S LIVE SHOW IS VIBRANT & VISCERAL, SHE FRONTS HER BAND WITH TRUE PASSION AND GIVES HER ALL AT EVERY PERFORMANCE, ALWAYS LEAVING HER HEART ON THE STAGE.
+					</span>
+					<span class="cream">
+						EMMA AND HER BAND HAVE PERFORMED AT FESTIVALS AND BLUES BARS ACROSS THE UK SUCH AS EALING BLUES FESTIVAL,THE CRAWDADDY CLUB,RICHMOND,THE LEGENDARY EALING CLUB, HOWZAT BLUES FESTIVAL AS WELL AS TONNES OF BRILLIANT BLUES & SOUL NIGHTS AROUND THE COUNTRY.. BUILDING UP THEIR AUDIENCE.
+					</span>
+					<span class="gold">
+						EMMA&apos;S FOLLOWING HAS GROWN THROUGH HER INCREDIBLE PERFORMANCES ONSTAGE - AS WELL AS HER HER EFFORT OFFSTAGE TO BE INVOLVED IN ALL ASPECTS OF THE BLUES & SOUL SCENE, PERSONALLY TALKING TO AND ENGAGING WITH DJs, PHOTOGRAPHERS & PROMOTERS & ALWAYS FINDING TIME TO TALK TO FANS &#45; SHE HAS BECOME AN EXCITING AND WELCOMED ADDITION TO THE BRITISH BLUES & SOUL SCENE.
+					</span>
+					<span class="cream">
+						EMMA&apos;S PROFILE HAS RISEN DRAMATICALLY IN THE LAST 18 MONTHS, HER GREAT VOICE COMBINED WITH HER PERSONAL CONNECTION TO THE PEOPLE WHO REALLY MAKE THE SCENE TICK HAS EARNED HER DOZENS OF RADIO INTERVIEWS, 100&apos;S OF RADIO PLAYS &#45; ACROSS THE WORLD &#45; AWARDS AND ACCOLADES FROM RADIO STATIONS AND MAGAZINES AND SUPERB PRESS.
+					</span>
+					<span class="gold">
+						EMMA IS ALSO A MUCH COVETED GUEST SINGER AND WAS PART OF THE SUPERGROUP AT &quot;AN EVENING FOR JACK&quot;, A TRIBUTE CONCERT TO JACK BRUCE, SHEPHERDS BUSH EMPIRE OCTOBER 2016. THE BAND ALSO FEATURED BERNIE MARSDEN, TERRY REID, MICK TAYLOR, STEVE HACKETT & DENNIS CHAMBERS..PLUS MANY MORE GREAT AND GOOD OF THE MUSIC SCENE.
+					</span>
+				</div>
 			</div>
+		</div>
 		<div class="sidebarContainer">
 			<div class="imgbox">
 				<img src="img/home2.jpg" />
 				<p>
 					&quot;Emma is a big fan of Aretha Franklin and Ann Peebles and boy does she do their material well!&quot; <br /><em>Mike Prendergast -(Blues Promoter - Darlington Blues Festival)</em>
 				</p>
-				<img src="img/home1.jpg" />
+			</div>
+			<div class="imgbox">
+				<img src="img/advert.png"/>
 				<p>
 					&quot;Deserves comparing with the great blues sirens, oozes class and charm&quot; <br /><em>Paul Dubbleman (Rock Photographer & Journalist)</em>
 				</p>
-				<img src="img/bb5.jpg" />
+			</div>
+			<div class="imgbox">
+				<img src="img/home1.jpg" />
 				<p>
-					&quot;I love her voice, it's so soulful&quot; <br /><em>Mick Glossop (Record Producer for Van Morrison, John Lee Hooker)</em>
+					&quot;I love her voice, it&apos;s so soulful&quot; <br /><em>Mick Glossop (Record Producer for Van Morrison, John Lee Hooker)</em>
 				</p>
 			</div>
-		</div>
+			<div class="imgbox">
+				<img src="img/bb5.jpg" />
+			</div>
 		</div>
 	</div>
 </body>

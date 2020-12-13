@@ -4,8 +4,8 @@
 /* Navigation */
 
 #header {
-	background-color: #333;
-	border: 0.5vw #F5F0DD solid;
+	background-color: #31151a;
+	border: 0.5vw #fcd759 solid;
 	margin: 0;
 	position: fixed;
 	top: 0;
@@ -13,16 +13,7 @@
 	height: 12vh;
 	display: flex;
 	flex-direction: row;
-}
-
-#logoContainer {
-	width: 24vw;
-	height: 12vh;
-}
-
-#logoContainer img {
-	height: 11vh;
-	padding: 0 2vw;
+	justify-content: center;
 }
 
 #navContainer {
@@ -37,6 +28,7 @@
 
 #navContainer a {
 	text-decoration: none;
+	font-size: 110%;
 }
 
 .nameHeader {
@@ -45,15 +37,15 @@
     -webkit-margin-after: 0.67em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
-	color: #F5F0DD;
+	color: #fcd759;
 	letter-spacing: 3px;
 }
 
 #nav a {
-	border-right-color: #F5F0DD;
+	border-right-color: #fcd759;
 	border-right-style: inset;
 	border-right-width: 0.2vw;
-	color: #F5F0DD;
+	color: #fcd759;
 	display: inline;
 	font-weight: bold;
 	font-size: 0.8vw;
@@ -86,7 +78,7 @@
 }
 
 #socialicons a div {
-	color: #F5F0DD;
+	color: #fcd759;
 	vertical-align: middle;
 	margin: 0;
 	padding: 0;
@@ -101,9 +93,6 @@
 
 .rounded-link img {
 	width: 4vw;
-}
-
-.rounded-link img {
 	border-radius: 0.5vw;
 }
 
@@ -114,7 +103,7 @@
 /* Reusable components*/
 
 body {
-	background-color: #333;
+	background-color: #31151a;
 	background-repeat: repeat;
 	margin: 0;
 	overflow: hidden;
@@ -177,15 +166,16 @@ body {
 }
 
 .container {
-	background-color: #333;
-	color: #F5F0DD;
+	background-color: #31151a;
+	color: #fcd759;
 	display: inline-block;
 	height: 85vh;
 	z-index: 1;
 	overflow: scroll;
-	border: 0.5vw #F5F0DD solid;
+	border: 0.5vw #fcd759 solid;
 	position: absolute;
 	line-height: 20pt;
+	scrollbar-width: none;
 }
 	
 .container h1 {
@@ -193,19 +183,20 @@ body {
 }
 
 .container a {
-	color: rgba(200,162,200, 0.8);
+	color: #fffdd0;
 	font-weight: bold;
 	text-decoration: none;
 }
 
 .mainContainer {
-	display: inline-block;
-	width: 60vw;
+	display: flex;
 	float: left;
 	padding: 1vw 1.5vw;
-	border-left: 0.5vw #F5F0DD solid;
-	border-right: 0.5vw #F5F0DD solid;
+	border-left: 0.5vw #fcd759 solid;
+	border-right: 0.5vw #fcd759 solid;
 	min-height: 100vw;
+	align-items: center;
+	flex-direction: column;
 }
 
 
@@ -214,8 +205,8 @@ body {
 	display: inline-block;
 	float: left;
 	padding: 1vw 1.5vw;
-	border-left: 0.5vw #F5F0DD solid;
-	border-right: 0.5vw #F5F0DD solid;
+	border-left: 0.5vw #fcd759 solid;
+	border-right: 0.5vw #fcd759 solid;
 	min-height: 100vw;
 }
 
@@ -225,6 +216,7 @@ body {
 	width: 25vw;
 	justify-content: center;
 	align-items: center;
+	line-height: 1.5;
 }
 
 .sidebarContainer .imgbox {
@@ -246,11 +238,6 @@ body {
 
 /* Home */
 
-albumImage {
-	justify-content: center;
-	margin: auto;
-}
-
 #albumDetails {
 	height: 25vw;
 	display: flex;
@@ -258,9 +245,12 @@ albumImage {
 }
 
 .newAlbum {
-	width: 100%;
 	margin-bottom: 5%;
 	text-align: center;
+}
+
+#quotes {
+	font-size: 120%;
 }
 
 .newAlbum img {
@@ -268,7 +258,7 @@ albumImage {
 	width: 100%;
 }
 
-#albumImage {
+.albumImage {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50vw;
@@ -295,22 +285,6 @@ albumImage {
 	width: 80vw;
 }
 
-#home p {
-	font-size: 90%;
-	display: inline-block;
-}
-
-#home h2 {
-	text-align: center;
-	margin: 1vw;
-}
-
-#home h6 {
-	margin: 0;
-	text-align: center;
-	font-size: 95%;
-}
-
 .soiImage img {
 	width: 23vw;
 	margin: 0 auto;
@@ -325,6 +299,12 @@ albumImage {
 	font-size: 80%;
 }
 
+/* News */
+
+.news {
+	font-size: 130%;
+	justify-content: center;
+}
 
 /* Guest Vocalist */
 
@@ -343,9 +323,9 @@ albumImage {
 	display: inline-block;
 	padding: 3%;
 	margin: 2%;
-	color: #F5F0DD;
+	color: #fcd759;
 	vertical-align: middle;
-	border: solid 3px #F5F0DD;
+	border: solid 3px #fcd759;
 }
 
 .gvBox iframe {
@@ -354,7 +334,7 @@ albumImage {
 }
 
 .gvBox a {
-	color: rgba(200,162,200, 0.8);
+	color: #fffdd0;
 }
 
 .gvBox iframe {
@@ -382,7 +362,7 @@ albumImage {
 	border-radius: 1%;
 	color: #331;
 	vertical-align: top;
-	border: solid 3px #F5F0DD;
+	border: solid 3px #fcd759;
 }
 
 .portfolioBox iframe {
@@ -406,13 +386,13 @@ albumImage {
 
 #portfolioNavigation {
 	margin: 2% 0;
-	border: solid 3px #F5F0DD;
+	border: solid 3px #fcd759;
 	padding: 2%;
 	color: #331;
 }
 
 #portfolioNavigation a {
-	color: #F5F0DD;
+	color: #fcd759;
 	margin: 5%;
 }
 
@@ -490,13 +470,13 @@ albumImage {
 }
 
 .imgholder {
-	border: 10px solid #F5F0DD;
+	border: 10px solid #fcd759;
 	width: 70%;
 	height: 70%;
 	text-align: center;
 	margin: auto;
 	vertical-align: middle;
-	background-color: rgba(200,162,200, 0.8);
+	background-color: #fffdd0;
 }
 
 #imageBacking {
@@ -581,7 +561,7 @@ albumImage {
 
 #theysay {
 	display: inline-block;
-	background-color: #333;
+	background-color: #31151a;
 	padding: 3%;
 }
 
@@ -599,34 +579,29 @@ albumImage {
 
 .musicVideo p {
 	margin: 0.2vw;
-}
-
-.mVideo {
-	height: 17vh;
-	width: 17vw;
+	color: #fffdd0;
 }
 
 #pressContainer {
 	padding: 0 2.5vw;
 }
 
-.pressArticle {
+.contentBox {
 	display: flex;
-	justify-content: space-between;
-}
+	padding: 1vw;
+	justify-content: center;
 }
 
-.pressArticle .row {
+.contentBox .row {
 	width: 30vw;
 }
 
-.pressArticle img {
+.contentBox img {
 	width: 15vw;
 }
 
-.pressArticleText {
-	font-size: 70%;
-	padding: 2%;
+.contentBoxText {
+	padding: 0 2vw;
 }
 
 
@@ -682,7 +657,7 @@ albumImage {
 }
 
 .bookings {
-	border: solid 2px #F5F0DD;
+	border: solid 2px #fcd759;
 	margin: 0 1%;
 	padding: 2%;
 	text-align: center;
@@ -705,4 +680,115 @@ albumImage {
 
 .letterSpacing {
 	letter-spacing: 0.2vw;
+}
+
+.center {
+	text-align: center;
+}
+
+/* Headers */
+
+h3 {
+	letter-spacing: 0.2vw;
+}
+
+/* Colours */
+
+.gold {
+	color: #fcd759;
+}
+
+.cream {
+	color: #fffdd0;
+}
+
+.burgundy {
+	color: #31151a
+}
+
+/* Columns */
+
+.col-1 {
+	width: 6vw;
+}
+
+.col-2 {
+	width: 12vw;
+}
+
+.col-3 {
+	width: 18vw;
+}
+
+.col-4 {
+	width: 24vw;
+}
+
+.col-5 {
+	width: 30vw;
+}
+
+.col-6 {
+	width: 36vw;
+}
+
+.col-7 {
+	width: 42vw;
+}
+
+.col-8 {
+	width: 48vw;
+}
+
+.col-9 {
+	width: 54vw;
+}
+
+.col-10 {
+	width: 60vw;
+}
+
+/* Padding */
+
+.px-1 {
+	padding: 0 .5vw;
+}
+
+.px-2 {
+	padding: 0 1vw;
+}
+
+.px-3 {
+	padding: 0 1.5vw;
+}
+
+.px-4 {
+	padding: 0 2vw;
+}
+
+.py-1 {
+	padding: .5vw 0;
+}
+
+.py-2 {
+	padding: 1vw 0;
+}
+
+.py-3 {
+	padding: 1.5vw 0;
+}
+
+.py-4 {
+	padding: 2vw 0;
+}
+/* Margin */
+
+.mAuto {
+	margin: auto;
+}
+
+/* displays */
+
+.flex {
+	display: flex;
 }
