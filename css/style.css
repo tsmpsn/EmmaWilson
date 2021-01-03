@@ -15,7 +15,6 @@
 	flex-direction: row;
 	justify-content: center;
 	color: #fcd759;
-
 }
 
 #navContainer {
@@ -50,7 +49,6 @@
 	color: #fcd759;
 	display: inline;
 	font-weight: bold;
-	font-size: 0.8vw;
 	font-family: Arial, serif;
 	padding: 0 1.5vw;
 	letter-spacing: 0.2vw;
