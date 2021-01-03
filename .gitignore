@@ -3,4 +3,7 @@
 *.png
 *.mp4
 *.txt
+
+.ds_store
 .idea/
+img/
