@@ -13,11 +13,11 @@
 	height: 12vh;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	color: #fcd759;
 }
 
-#navContainer {
+.navContainer {
 	display: flex;
 	flex-direction: row;
 	width: 75vw;
@@ -27,7 +27,7 @@
 	align-items: center;
 }
 
-#navContainer a {
+.navContainer a {
 	text-decoration: none;
 	font-size: 110%;
 }
@@ -152,8 +152,10 @@ body {
 	font-style: italic;
 }
 
-.centre {
-	text-align: center;
+.flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* #region Containers */
@@ -317,10 +319,9 @@ body {
 .gvBox {
 	height: auto;
 	width: 92%;
-	margin-top: 8.5%;
+	margin: 8.5% 2% 2% 2%;
 	display: inline-block;
 	padding: 3%;
-	margin: 2%;
 	color: #fcd759;
 	vertical-align: middle;
 	border: solid 3px #fcd759;
@@ -783,6 +784,10 @@ h3 {
 
 .mAuto {
 	margin: auto;
+}
+
+.m0 {
+	margin: 0;
 }
 
 /* displays */
