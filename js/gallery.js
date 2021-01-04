@@ -1,30 +1,30 @@
 /* Display pop-up */
 
 var imageMap = {
-	1: "img/GALLERY1.jpg",
-	2: "img/GALLERY2.jpg",
-	3: "img/GALLERY3.jpg",
-	4: "img/GALLERY4.jpg",
-	5: "img/GALLERY5.jpg",
-	6: "img/GALLERY6.jpg",
-	7: "img/GALLERY7.jpeg",
-	8: "img/GALLERY8.jpg",
-	9: "img/GALLERY9.jpg",
-	10: "img/GALLERY10.jpg",
-	11: "img/GALLERY11.jpg",
-	12: "img/GALLERY12.jpg",
-	13: "img/GALLERY13.jpg",
-	14: "img/GALLERY14.jpg",
-	15: "img/GALLERY15.jpg",
-	16: "img/GALLERY16.jpg",
-	17: "img/GALLERY17.jpg",
-	18: "img/GALLERY18.jpg"
+	1: "img/gallery/GALLERY1.jpg",
+	2: "img/gallery/GALLERY2.jpg",
+	3: "img/gallery/GALLERY3.jpg",
+	4: "img/gallery/GALLERY4.jpg",
+	5: "img/gallery/GALLERY5.jpg",
+	6: "img/gallery/GALLERY6.jpg",
+	7: "img/gallery/GALLERY7.jpeg",
+	8: "img/gallery/GALLERY8.jpg",
+	9: "img/gallery/GALLERY9.jpg",
+	10: "img/gallery/GALLERY10.jpg",
+	11: "img/gallery/GALLERY11.jpg",
+	12: "img/gallery/GALLERY12.jpg",
+	13: "img/gallery/GALLERY13.jpg",
+	14: "img/gallery/GALLERY14.jpg",
+	15: "img/gallery/GALLERY15.jpg",
+	16: "img/gallery/GALLERY16.jpg",
+	17: "img/gallery/GALLERY17.jpg",
+	18: "img/gallery/GALLERY18.jpg"
 };
 
 var currentImage = 0;
 
 document.addEventListener("keydown", function(e) {
-	switch(expression) {
+	switch (e.keyCode) {
 		case 37:
 			previousImage();
 			break;
@@ -32,7 +32,7 @@ document.addEventListener("keydown", function(e) {
 			nextImage();
 			break;
 		case 27:
-			hideFullImage();
+			hideGalleryView();
 			break;
 	}
 });
@@ -43,11 +43,11 @@ function showFullImage(imageID) {
 	currentImage = imageID.substr(3,4);
 	document.getElementById("fullGalleryImage").alt = currentImage;
 	document.getElementById("fullGalleryImage").src = imageMap[currentImage];
-	$("#imageBacking").removeClass("hideFullImage");
+	$("#imageBacking").removeClass("hideGalleryView");
 }
 
-function hideFullImage() {	
-	$("#imageBacking").addClass("hideFullImage");
+function hideGalleryView() {	
+	$("#imageBacking").addClass("hideGalleryView");
 }
 
 /* Switching image */
