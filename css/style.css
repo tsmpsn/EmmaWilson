@@ -13,10 +13,11 @@
 	height: 12vh;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
+	color: #fcd759;
 }
 
-#navContainer {
+.navContainer {
 	display: flex;
 	flex-direction: row;
 	width: 75vw;
@@ -26,17 +27,16 @@
 	align-items: center;
 }
 
-#navContainer a {
+.navContainer a {
 	text-decoration: none;
-	font-size: 110%;
 }
 
 .nameHeader {
 	size: 2em;
     -webkit-margin-before: 0.67em;
     -webkit-margin-after: 0.67em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
 	color: #fcd759;
 	letter-spacing: 3px;
 }
@@ -48,8 +48,7 @@
 	color: #fcd759;
 	display: inline;
 	font-weight: bold;
-	font-size: 0.8vw;
-	font-family: Arial;
+	font-family: Arial, serif;
 	padding: 0 1.5vw;
 	letter-spacing: 0.2vw;
 	vertical-align: middle;
@@ -66,7 +65,7 @@
 	float: left;
 }
 
-#socialicons {
+#socialIcons {
 	position: fixed;
 	width: 5vw;
 	z-index: 3;
@@ -77,30 +76,30 @@
 	align-items: center;
 }
 
-#socialicons a div {
+#socialIcons a div {
 	color: #fcd759;
 	vertical-align: middle;
 	margin: 0;
 	padding: 0;
 }
 
-.rounded-link {
+.roundedLink {
 	display: flex;
 	align-items: center;
 	text-align: center;
 	vertical-align: middle;
 }
 
-.rounded-link img {
+.roundedLink img {
 	width: 4vw;
 	border-radius: 0.5vw;
 }
 
-.lastchild {
-	border-right: none 0vw !important;
+.lastChild {
+	border-right: none 0 !important;
 }
 
-/* Reusable components*/
+/* Reusable components */
 
 body {
 	background-color: #31151a;
@@ -152,10 +151,10 @@ body {
 	font-style: italic;
 }
 
-// Simple 
-
-.centre {
-	text-align: center;
+.flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* #region Containers */
@@ -219,7 +218,7 @@ body {
 	line-height: 1.5;
 }
 
-.sidebarContainer .imgbox {
+.sidebarContainer .imgBox {
 	width: 20vw;
 	margin: 2vw;
 }
@@ -244,7 +243,7 @@ body {
 	flex-direction: row;
 }
 
-.newAlbum {
+.album {
 	margin-bottom: 5%;
 	text-align: center;
 }
@@ -253,7 +252,7 @@ body {
 	font-size: 120%;
 }
 
-.newAlbum img {
+.album img {
 	height: 100%;
 	width: 100%;
 }
@@ -277,7 +276,7 @@ body {
 #albumVideos {
 	display: flex;
 	flex-direction: column;
-	padding: 0vh 2vw;
+	padding: 0 2vw;
 	justify-content: center;
 }
 
@@ -290,7 +289,7 @@ body {
 	margin: 0 auto;
 }
 
-.imgbox img {
+.imgBox img {
 	max-height: 100%;
 	max-width: 100%;
 }
@@ -319,10 +318,9 @@ body {
 .gvBox {
 	height: auto;
 	width: 92%;
-	margin-top: 8.5%;
+	margin: 8.5% 2% 2% 2%;
 	display: inline-block;
 	padding: 3%;
-	margin: 2%;
 	color: #fcd759;
 	vertical-align: middle;
 	border: solid 3px #fcd759;
@@ -412,20 +410,6 @@ body {
 
 /* Gallery */
 
-.imageOptions {
-	display: inline-block;
-}
-
-.imageOptions a {
-	color: #f2f2f2;
-	width: 100%;
-	margin: auto;
-	padding: 5%;
-	display: inline-block;
-	text-decoration: none;
-	font-weight: bold;
-}
-
 #imgNavigation {
 	margin: 0 10%;
 	display: flex;
@@ -439,7 +423,10 @@ body {
 	z-index: 2;
 	height: auto;
 	position: relative;
-	top: -5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
 
 #imageBox {
@@ -454,22 +441,22 @@ body {
 	vertical-align: top;
 }
 
-.galleryimg {
+.galleryImg {
 	vertical-align: top;
 	align-content: center;
 	display: inline-block;
 }
 
-.galleryimg img{
+.galleryImg img{
 	vertical-align: top;
 	max-width: 100%;
 }
 
-.hideFullImage {
+.hideGalleryView {
 	visibility: hidden;
 }
 
-.imgholder {
+.imgHolder {
 	border: 10px solid #fcd759;
 	width: 70%;
 	height: 70%;
@@ -477,12 +464,15 @@ body {
 	margin: auto;
 	vertical-align: middle;
 	background-color: #fffdd0;
+	display: flex;
+	flex-direction: column;
 }
 
 #imageBacking {
 	background-color: rgba(0,0,0,0.8);
 	color: #331;
 	width: 100%;
+	height: 100%;
 	position: absolute;
 	z-index: 10;
 	margin: 0;
@@ -499,10 +489,9 @@ body {
 	max-height: 400px;
 }
 
-#closeImage {
+#imgControl a {
+	text-decoration: none;
 	display: inline-block;
-	margin: auto;
-	padding: 2%;
 }
 
 /* Dates */
@@ -785,6 +774,10 @@ h3 {
 
 .mAuto {
 	margin: auto;
+}
+
+.m0 {
+	margin: 0;
 }
 
 /* displays */

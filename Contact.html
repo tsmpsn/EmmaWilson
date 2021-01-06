@@ -6,23 +6,57 @@
 <title>Emma Wilson</title>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
-<link rel="stylesheet" href="/include.js" type="text" charset="utf-8" />
 <link href="css/fonts/Alegreya/Alegreya-Bold.ttf" type="text" charset="utf-8" />
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/include.js"></script>
 
 </head>
 
-<body onload="includeHTML()">
+<body>
 	<div id="header">
-		<div id="navContainer">
-			<div w3-include-html="partials/_navigationbar.html"></div>
+		<div class="col-6 flexCenter">
+			<h1 class="m0">EMMA WILSON</h1>
+		</div>
+		<div class="navContainer col-10">
+			<div id="nav">
+				<a href="index.html">HOME</a>
+				<a href="News.html">NEW & MUSIC</a>
+				<a href="RadioPress.html">PRESS & RADIO</a>
+				<a href="Gallery.html">GALLERY</a>
+				<a href="Contact.html" class="lastChild">CONTACT</a>
+			</div>
 		</div>
 	</div>
 	<div class="main">
 		<div class="container">
-			<div class="iconsHolder" w3-include-html="partials/_socialicons.html">
+			<div class="iconsHolder">
+				<div id="socialIcons">
+					<a class="roundedLink" href="https://instagram.com/emmawilsonbluesband" target="_blank">
+						<div>
+							<img src="img/icons/ig.png" alt="instagram icon" />
+						</div>
+					</a>
+					<a class="roundedLink" href="https://soundcloud.com/emmawilsonblues" target="_blank">
+						<div>
+							<img src="img/icons/sc.png" alt="soundcloud icon" />
+						</div>
+					</a>
+					<a class="roundedLink" href="https://www.facebook.com/EmmaWilsonBluesBand" target="_blank">
+						<div>
+							<img src="img/icons/fb.gif" alt="facebook icon" />
+						</div>
+					</a>
+					<a class="roundedLink" href="https://www.youtube.com/user/emmawilsonbluesband" target="_blank">
+						<div>
+							<img src="img/icons/youtube.png" alt="youtube icon" />
+						</div>
+					</a>
+					<a class="roundedLink" href="https://twitter.com/emmawilsonsings" target="_blank">
+						<div>
+							<img src="img/icons/twit.png" alt="twitter icon" />
+						</div>
+					</a>
+				</div>
 			</div>
 			<div id="contactInformation" class="mainContainer hiddenScrollbar">
 				<div class="bookings">
@@ -34,7 +68,6 @@
 					her live show is emotional and cool. Emma's <a class="text-link" href="https://www.facebook.com/pg/EmmaWilsonBluesBand/events/">Blues Band</a> are touring and recording,
 					Information about Emma's upcoming gigs can be found on her <a class="text-link" href="https://www.facebook.com/pg/EmmaWilsonBluesBand/events/"> facebook page</a>.
 				</p>
-				
 				<hr/><br/>
 				<div class="bookings">
 					<h3>
@@ -42,12 +75,12 @@
 						<br/>
 						<span class="cream">nospmismot@protonmail.com</span>
 					</h3>
-					<img class="nospmismotImage" src="img/nospmismot.jpg" />
+					<img class="nospmismotImage" src="img/nospmismot.jpg" alt="nospmismot.com" />
 				</div>
 			</div>
 			<div class="sidebarContainer">
-				<div class="imgbox">
-					<img src="img/bb2.jpg" />
+				<div class="imgBox">
+					<img src="img/bb/bb2.jpg" alt="blues band image two"/>
 				</div>
 			</div>
 		</div>

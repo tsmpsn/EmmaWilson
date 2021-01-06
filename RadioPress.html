@@ -6,38 +6,112 @@
 <title>Radio Sessions</title>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
-<link rel="stylesheet" href="/include.js" type="text" charset="utf-8" />
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="js/include.js"></script>
 
 </head>
 
 <body>
 	<div id="header">
-		<div id="navContainer">
-			<div w3-include-html="partials/_navigationbar.html"></div>
+		<div class="col-6 flexCenter">
+			<h1 class="m0">EMMA WILSON</h1>
+		</div>
+		<div class="navContainer col-10">
+			<div id="nav">
+				<a href="index.html">HOME</a>
+				<a href="News.html">NEW & MUSIC</a>
+				<a href="RadioPress.html">PRESS & RADIO</a>
+				<a href="Gallery.html">GALLERY</a>
+				<a href="Contact.html" class="lastChild">CONTACT</a>
+			</div>
 		</div>
 	</div>
 	<div class="main">
 		<div class="container">
-			<div class="iconsHolder" w3-include-html="partials/_socialicons.html"></div>
+			<div class="iconsHolder">
+				<div id="socialIcons">
+					<a class="roundedLink" href="https://instagram.com/emmawilsonbluesband" target="_blank">
+						<div>
+							<img src="img/icons/ig.png" alt="instagram icon" />
+						</div>
+					</a>
+					<a class="roundedLink" href="https://soundcloud.com/emmawilsonblues" target="_blank">
+						<div>
+							<img src="img/icons/sc.png" alt="soundcloud icon" />
+						</div>
+					</a>
+					<a class="roundedLink" href="https://www.facebook.com/EmmaWilsonBluesBand" target="_blank">
+						<div>
+							<img src="img/icons/fb.gif" alt="facebook icon" />
+						</div>
+					</a>
+					<a class="roundedLink" href="https://www.youtube.com/user/emmawilsonbluesband" target="_blank">
+						<div>
+							<img src="img/icons/youtube.png" alt="youtube icon" />
+						</div>
+					</a>
+					<a class="roundedLink" href="https://twitter.com/emmawilsonsings" target="_blank">
+						<div>
+							<img src="img/icons/twit.png" alt="twitter icon" />
+						</div>
+					</a>
+				</div>
+			</div>
 			<div class="mainContainer col-10">
 				<div id="pressContainer" class="col-9">
 					<h1 class="letterSpacing">Press</h1>
-					<hr><br />
-					<div class="contentBox col-8 mAuto">
-						<div class="col-4 px-2 center">
-							<a target=”_blank” href="https://www.music-news.com/review/UK/14401/Single/Emma-Wilson">
-								<h3>REVIEW OF "FEELGOOD" IN "MUSIC NEWS" - 4 STARS</h3>
-							</a>
-							<img src="" />
+					<hr>
+					<div class="contentBox column col-9 mAuto">
+						<div class="col-9 block">
+							<h1>REVIEW: LOVEHEART EP RELEASED 11th DECEMBER 2020</h1>
 						</div>
-						<div class="col-4 px-2 center">
-							<a target=”_blank” href="https://bluesmatters.com/emma-wilson-live-and-acoustic/">
-								<h3>REVIEW OF "LIVE & ACOUSTIC" IN "BLUES MATTERS" MAGAZINE</h3>
+						<div class="contentBox col-9">
+							<div class="col-5 px-2">
+								<h3><span class="cream">&quot;IBBA PRESENTERS PICK JANUARY 2021&quot;</span></h3>
+								<h3>&quot;CAPTIVATES FROM START TO FINISH&quot;</h3> - JOHN REED (FATEA MAGAZINE)
+								<a target="_blank" href="https://www.fatea-records.co.uk/magazine/reviews/EmmaWilson/">
+									<h2>READ FULL ARTICLE HERE </h2>
+								</a>
+							</div>
+							<div class="col-3 px-2">
+								<img src="img/press/loveheartep.jpg" alt="LOVEHEART EP "/> <br />
+							</div>
+						</div>
+						<div class="contentBox col-9 center">
+							<span class="cream">&quot;SUBLIME&quot; - PAUL WINN (BLUES FROM THE OUSE)</span><br />
+							<span class="gold">&quot;I RECEIVED 1,000 NEW RELEASES IN 2020, EMMA WILSON MADE MY TOP 30&quot; - RICK STUART (ROOTS & FUSION)</span><br />
+							<span class="cream">&quot;A SHINING STAR, CONTINUING TO RISE" COLIN McNEILLIE (BEAR BLUES SHOW)</span>
+						</div>
+					</div>
+					<hr>
+					<div class="contentBox col-9 column mAuto">
+						<div class="col-9 block">
+							<h3>INTERVIEW: MARITIME RADIO</h3>
+						</div>
+						<div class="col-9">
+							A SHOT OF RHYTHM & BLUES - MARITIME RADIO - EMMA WILSON MUSIC & INFLUENCES.<br />
+							EMMA RECENTLY DID AN INTERVIEW WITH LEGENDARY SOUL DJ CLIVE RICHARDSON. THE FULL INTERVIEW CAN BE LISTED TO 
+							<a href="https://www.mixcloud.com/cliverich46/a-shot-of-rhythm-blues-maritime-radio-emma-wilson-music-influences/">
+								HERE
 							</a>
 						</div>
+					</div>
+					<hr>
+					<div class="contentBox col-9 mAuto">
+						<a
+							target="_blank" href="https://www.music-news.com/review/UK/14401/Single/Emma-Wilson"
+							class="col-4 px-2 center column">	
+								<h3>REVIEW: &quot;FEELGOOD" IN &quot;MUSIC NEWS&quot; - 4 STARS</h3>
+								<img src="img/press/musicnewsmagazine.png" alt="music news magazine logo"/>
+						</a>
+						<a
+							target="_blank" href="https://bluesmatters.com/emma-wilson-live-and-acoustic/"
+							class="col-4 px-2 center column">
+									<h3>REVIEW: "LIVE & ACOUSTIC" IN "BLUES MATTERS" MAGAZINE</h3>
+								<div class="flexCenter" style="height: 50%;">
+									<img src="img/press/bluesmatterslogo.png" alt="blues matters logo"/>
+								</div>
+						</a>
 					</div>
 					<hr><br />
 					<div class="contentBox column col-9">
@@ -45,18 +119,18 @@
 							<h3>REVIEW: The Blues in the South Magazine</h3>
 						</div>
 						<div class="col-9 center">
-							<img src="img/press/bits1.jpg" />
-							<img src="img/press/bits2.jpg" />
-							<img src="img/press/bits3.jpg" />
+ 							<img src="img/press/bits1.jpg" alt="bits image 1" />
+							<img src="img/press/bits2.jpg" alt="bits image 2" />
+							<img src="img/press/bits3.jpg" alt="bits image 3" />
 						</div>
-						<div class="col-9 center">
-							<img src="img/press/bits4.jpg" />
-							<img src="img/press/bits5.jpg" />
-							<img src="img/press/bits6.jpg" />
+ 						<div class="col-9 center">
+ 							<img src="img/press/bits4.jpg" alt="bits image 4" />
+							<img src="img/press/bits5.jpg" alt="bits image 5" />
+							<img src="img/press/bits6.jpg" alt="bits image 6" />
 						</div>
 					</div>
 					<br /><hr><br />
-					<div class="contentBox col-9"">
+					<div class="contentBox col-9">
 						<div class="col-4">
 							<h3>HARRY SIMPSON&#39;S "STILL GO THE BLUES" SHOW</h3>
 							ZETLAND FM (Live Session)<br />
@@ -99,7 +173,7 @@
 							1ST YORK BLUES FESTIVAL APRIL 2019<br/>
 						</div>
 						<div class="col-4 center">
-							<img src="img/press/york.jpg" />
+							<img src="img/press/york.jpg" alt="york image" />
 						</div>
 					</div>
 					<br /><hr><br />
@@ -135,7 +209,7 @@
 							</a>
 						</div>
 						<div class="col-4 center">
-							<img src="img/press/sftsReview.jpg" />
+							<img src="img/press/sftsReview.jpg" alt="song for the siren review image"/>
 						</div>
 					</div>
 				</div>
@@ -161,7 +235,7 @@
 				<hr>
 				<br />
 				<div class="col-4 center">
-					<img src="img/press/bmm feel good.jpg" />
+					<img src="img/press/bmmfeelgood.jpg" alt="blues matters magazine feel good review"/>
 				</div>
 				<br /><hr>
 				<div class="col-3 center">
@@ -169,7 +243,7 @@
 					Feelgood EP
 					<br />
 					<br />
-					<img class="col-3 center" src="img/press/recklesstram.jpg" />
+					<img class="col-3 center" src="img/press/recklesstram.jpg" alt="reckless tram" />
 				</div>
 				<br /><hr><br />
 				<div class="col-3 center">
@@ -177,12 +251,10 @@
 					&#34;Emma&#39;s EP &#34;Live & Acoustic&#34; is one of the best releases of 2019, I can&#39;t wait for her new full electric album&#34; Ian McHugh &#34;Blues is The Truth Radio&#34; <br/>
 					<br />
 					<br />
-					<img class="col-3 center" src="img/press/sketch.jpg" />
+					<img class="col-3 center" src="img/press/sketch.jpg" alt="Sketch of Emma"/>
 				</div>
 				<br /><hr><br />
 			</div>
 		</div>
 	</div>
-	
-	<script>includeHTML();</script>
 </body>

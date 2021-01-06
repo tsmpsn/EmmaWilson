@@ -6,111 +6,134 @@
 <title>Gallery</title>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
-<link rel="stylesheet" href="/include.js" type="text" charset="utf-8" />
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/gallery.js"></script>
-<script type="text/javascript" src="js/include.js"></script>
+	
 </head>
 
 <body>
 	<div id="header">
-		<div id="navContainer">
-			<div w3-include-html="partials/_navigationbar.html"></div>
+		<div class="col-6 flexCenter">
+			<h1 class="m0">EMMA WILSON</h1>
+		</div>
+		<div class="navContainer col-10">
+			<div id="nav">
+				<a href="index.html">HOME</a>
+				<a href="News.html">NEW & MUSIC</a>
+				<a href="RadioPress.html">PRESS & RADIO</a>
+				<a href="Gallery.html">GALLERY</a>
+				<a href="Contact.html" class="lastChild">CONTACT</a>
+			</div>
 		</div>
 	</div>
 	<div class="main">
 		<div class="container">
-			<div class="iconsHolder" w3-include-html="partials/_socialicons.html"></div>
+			<div class="iconsHolder">
+				<div id="socialIcons">
+					<a class="roundedLink" href="https://instagram.com/emmawilsonbluesband" target="_blank">
+						<div>
+							<img src="img/icons/ig.png" alt="instagram icon" />
+						</div>
+					</a>
+					<a class="roundedLink" href="https://soundcloud.com/emmawilsonblues" target="_blank">
+						<div>
+							<img src="img/icons/sc.png" alt="soundcloud icon" />
+						</div>
+					</a>
+					<a class="roundedLink" href="https://www.facebook.com/EmmaWilsonBluesBand" target="_blank">
+						<div>
+							<img src="img/icons/fb.gif" alt="facebook icon" />
+						</div>
+					</a>
+					<a class="roundedLink" href="https://www.youtube.com/user/emmawilsonbluesband" target="_blank">
+						<div>
+							<img src="img/icons/youtube.png" alt="youtube icon" />
+						</div>
+					</a>
+					<a class="roundedLink" href="https://twitter.com/emmawilsonsings" target="_blank">
+						<div>
+							<img src="img/icons/twit.png" alt="twitter icon" />
+						</div>
+					</a>
+				</div>
+			</div>
 			<div class="largeContainer">
 				<div id="col1" class="galCol">
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 1.jpg" id="img1" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY1.jpg" id="img1" onclick="showFullImage(this.id);" />
 					</div>
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 2.jpg" id="img2" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY2.jpg" id="img2" onclick="showFullImage(this.id);" />
 					</div>
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 3.jpg" id="img3" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY3.jpg" id="img3" onclick="showFullImage(this.id);" />
 					</div>
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 4.jpg" id="img4" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY4.jpg" id="img4" onclick="showFullImage(this.id);" />
 					</div>
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 5.jpg" id="img5" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY5.jpg" id="img5" onclick="showFullImage(this.id);" />
 					</div>
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 6.jpg" id="img6" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY6.jpg" id="img6" onclick="showFullImage(this.id);" />
 					</div>
 				</div>
 				<div id="col2" class="galCol">
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 7.jpeg" id="img7" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY7.jpeg" id="img7" onclick="showFullImage(this.id);" />
 					</div>
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 8.jpg" id="img8" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY8.jpg" id="img8" onclick="showFullImage(this.id);" />
 					</div>
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 9.jpg" id="img9" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY9.jpg" id="img9" onclick="showFullImage(this.id);" />
 					</div>
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 10.jpg" id="img10" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY10.jpg" id="img10" onclick="showFullImage(this.id);" />
 					</div>
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 11.jpg" id="img11" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY11.jpg" id="img11" onclick="showFullImage(this.id);" />
 					</div>
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 12.jpg" id="img12" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY12.jpg" id="img12" onclick="showFullImage(this.id);" />
 					</div>
 				</div>
 				<div id="col3" class="galCol">
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 13.jpg" id="img13" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY13.jpg" id="img13" onclick="showFullImage(this.id);" />
 					</div>
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 14.jpg" id="img14" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY14.jpg" id="img14" onclick="showFullImage(this.id);" />
 					</div>
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 15.jpg" id="img15" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY15.jpg" id="img15" onclick="showFullImage(this.id);" />
 					</div>
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 16.jpg" id="img16" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY16.jpg" id="img16" onclick="showFullImage(this.id);" />
 					</div>
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 17.jpg" id="img17" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY17.jpg" id="img17" onclick="showFullImage(this.id);" />
 					</div>
-					<div class="galleryimg">
-						<img src="img/gallery/GALLERY 18.jpg" id="img18" onclick="showFullImage(this.id);" />
+					<div class="galleryImg">
+						<img src="img/gallery/GALLERY18.jpg" id="img18" onclick="showFullImage(this.id);" />
 					</div>
 				</div>
 			</div>
 		</div>
-		
 		<!-- View Image -->
 		
-		<div id="imageBacking" class="hideFullImage" >
-			<div class="imgholder">
-				<div id="imgBox">
-					<div id="imgDetails">
-						<img src="img/sideblackwhite.jpg" id="fullGalleryImage" />
-					</div>
-					<div id="imgControl">
-						<a onclick="nextImage();" href="#">Next Image</a>
-						<a onclick="previousImage();" href="#">Previous Image</a>
-					</div>
+		<div id="imageBacking" class="hideGalleryView" >
+			<div class="imgHolder">
+				<div id="imgDetails">
+					<img src="img/sideblackwhite.jpg" id="fullGalleryImage" />
 				</div>
-				<div id="imgNavigation">
-					<div class="imageOptions" >
-					</div>
-					<div id="closeImage" class="imageOptions">
-						<a onclick="hideFullImage();" href="#">Close</a>
-					</div>
-					<div class="imageOptions" >
-					</div>
+				<div id="imgControl">
+					<a onclick="previousImage();" href="#"><h1>&lt;</h1></a>
+					<a onclick="hideGalleryView();" href="#"><h3>Close</h3></a>
+					<a onclick="nextImage();" href="#"><h1>&gt;</h1></a>
 				</div>
 			</div>
 		</div>
 	</div>
-	
-	<script>includeHTML();</script>
 </body>
